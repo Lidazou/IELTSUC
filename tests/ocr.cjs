@@ -1,0 +1,2 @@
+const path=require('path');
+(async()=>{let w=await require('tesseract.js').createWorker(['eng','chi_sim'],1,{gzip:false,langPath:path.resolve('assets/ocr-bundled'),cacheMethod:'none'});try{let r=await w.recognize('ocr-test.png');console.log(r.data.text);if(!/sustainable/i.test(r.data.text)||!/持续/.test(r.data.text.replace(/ /g,'')))throw Error('OCR output mismatch');console.log('LOCAL BILINGUAL OCR PASSED')}finally{await w.terminate()}})().catch(e=>{console.error(e);process.exit(1)});

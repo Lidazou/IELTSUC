@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "demoWords": 10,
+  "pages": [
+    [
+      "home",
+      true
+    ],
+    [
+      "words",
+      true
+    ],
+    [
+      "listening",
+      true
+    ],
+    [
+      "speaking",
+      true
+    ],
+    [
+      "reading",
+      true
+    ],
+    [
+      "writing",
+      true
+    ],
+    [
+      "grammar",
+      true
+    ],
+    [
+      "exams",
+      true
+    ],
+    [
+      "errors",
+      true
+    ],
+    [
+      "settings",
+      true
+    ],
+    [
+      "library",
+      true
+    ]
+  ],
+  "writingLauncher": true,
+  "hiddenAnswer": true
+}

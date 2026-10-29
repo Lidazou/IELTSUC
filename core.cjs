@@ -1,0 +1,5 @@
+const norm=s=>String(s||'').trim().toLowerCase().replace(/[’]/g,"'").replace(/\s+/g,' ');
+function parseWords(text){return text.split(/\r?\n/).map(line=>{let m=line.trim().match(/^([a-zA-Z][a-zA-Z '\-]*?)\s*(?:[,;\t|]|\s{2,}|\s+(?=(?:n|v|adj|adv|prep|phr|vt|vi)\.))\s*(.*)$/);if(!m)return null;let rest=m[2],p=rest.match(/^(n|v|adj|adv|prep|phr|vt|vi|conj|pron)\.?\s*[,;\t|]?\s*/i);return{english:m[1].trim(),pos:p?p[1]+'.':'',translation:p?rest.slice(p[0].length).trim():rest.trim()}}).filter(w=>w&&w.translation&&/[a-z]/i.test(w.english));}
+function splitTime(start,end){let rows=[];while(start<end){let d=new Date(start),next=new Date(d.getFullYear(),d.getMonth(),d.getDate()+1).getTime(),stop=Math.min(next,end);rows.push({date:`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`,seconds:(stop-start)/1000});start=stop}return rows;}
+function grade(questions,answers){return questions.map((q,i)=>({...q,response:answers[i]||'',correct:(Array.isArray(q.answer)?q.answer:[q.answer]).some(a=>norm(a)===norm(answers[i]))}));}
+module.exports={norm,parseWords,splitTime,grade};

@@ -1,0 +1,74 @@
+{
+  "commit": "public-demo-v1",
+  "words": [
+    {
+      "english": "focus",
+      "translation": "专注",
+      "pos": "v.",
+      "book": "入门示例 · 可替换为自己的词书"
+    },
+    {
+      "english": "progress",
+      "translation": "进步",
+      "pos": "n.",
+      "book": "入门示例 · 可替换为自己的词书"
+    },
+    {
+      "english": "practice",
+      "translation": "练习",
+      "pos": "n.",
+      "book": "入门示例 · 可替换为自己的词书"
+    },
+    {
+      "english": "confidence",
+      "translation": "信心",
+      "pos": "n.",
+      "book": "入门示例 · 可替换为自己的词书"
+    },
+    {
+      "english": "improve",
+      "translation": "改善；提高",
+      "pos": "v.",
+      "book": "入门示例 · 可替换为自己的词书"
+    },
+    {
+      "english": "goal",
+      "translation": "目标",
+      "pos": "n.",
+      "book": "入门示例 · 可替换为自己的词书"
+    },
+    {
+      "english": "learn",
+      "translation": "学习",
+      "pos": "v.",
+      "book": "入门示例 · 可替换为自己的词书"
+    },
+    {
+      "english": "review",
+      "translation": "复习",
+      "pos": "v.",
+      "book": "入门示例 · 可替换为自己的词书"
+    },
+    {
+      "english": "listen",
+      "translation": "听",
+      "pos": "v.",
+      "book": "入门示例 · 可替换为自己的词书"
+    },
+    {
+      "english": "write",
+      "translation": "写",
+      "pos": "v.",
+      "book": "入门示例 · 可替换为自己的词书"
+    }
+  ],
+  "chapters": [],
+  "listening": [],
+  "reading": [],
+  "sentences": [],
+  "grammar": {
+    "pdf": "public/grammar/notes.pdf",
+    "map": "public/grammar/map.svg",
+    "video": "https://github.com/hefengxian/my-ielts"
+  }
+}

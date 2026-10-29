@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.qa*/
+*.sqlite*
+*.bak
+.env*
+!examples/.env.example
+*.log
+Thumbs.db
+.DS_Store
+assets/curriculum/upstream/
+
+assets/ocr-bundled/*.traineddata
+
+__pycache__/
+*.pyc
